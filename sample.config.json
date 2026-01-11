@@ -1,0 +1,16 @@
+{
+  "api_key": "YOUR_API_KEY_HERE",
+  "backend_url": "https://api.vpsentinel.com",
+  "interval_seconds": 30,
+  "hostname": "my-vps-1",
+  "log_paths": [
+    "/var/log/syslog",
+    "/var/log/nginx/error.log"
+  ],
+  "log_max_lines": 100,
+  "ssl_domains": [
+    "example.com",
+    "app.example.com"
+  ],
+  "ports_to_monitor": []
+}

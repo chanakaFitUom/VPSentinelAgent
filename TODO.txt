@@ -1,0 +1,205 @@
+VPSentinel Agent - TODO List for Future Development
+
+========================================
+PHASE 1: MVP Enhancements
+========================================
+
+[ ] Improve port detection parsing
+    - Better regex patterns for different `ss` output formats
+    - Handle edge cases (IPv6, special port formats)
+    - Test on various Linux distributions
+
+[ ] Enhance log sanitization
+    - Add more pattern matching rules
+    - Support for environment variable masking
+    - Better private key detection
+    - Configurable sanitization rules
+
+[ ] Optimize large log file reading
+    - Implement proper tailing mechanism
+    - Use library like github.com/nxadm/tail for efficient tailing
+    - Handle rotated log files
+
+[ ] Add structured logging
+    - Migrate from standard `log` to `zap` or similar
+    - Add log levels (DEBUG, INFO, WARN, ERROR)
+    - Structured fields for better log analysis
+    - Configurable log output (file, stdout, syslog)
+
+[ ] Improve error messages
+    - More descriptive error messages
+    - Error codes for different failure types
+    - User-friendly messages for common issues
+
+[ ] Add configuration validation
+    - Validate log paths exist and are readable
+    - Validate SSL domains format
+    - Validate port numbers in ports_to_monitor
+    - Better validation error messages
+
+[ ] Add health monitoring
+    - Agent self-health check
+    - Report agent version and uptime
+    - Memory usage tracking
+    - Collection cycle duration tracking
+
+========================================
+PHASE 2: Testing & Quality
+========================================
+
+[ ] Write unit tests
+    - config/ package tests
+    - metrics/ package tests
+    - network/ package tests (mocking exec.Command)
+    - logs/ package tests
+    - transport/ package tests (mocking HTTP client)
+
+[ ] Write integration tests
+    - End-to-end payload assembly test
+    - Retry logic testing
+    - Error handling scenarios
+    - Signal handling tests
+
+[ ] Add benchmarking
+    - Collection performance benchmarks
+    - Memory usage benchmarks
+    - Network request benchmarks
+
+[ ] Add code coverage
+    - Target: 80%+ coverage
+    - Coverage reports in CI/CD
+
+[ ] Linting and code quality
+    - golangci-lint configuration
+    - Fix all linter warnings
+    - Code review checklist
+
+========================================
+PHASE 3: Cross-Platform Support
+========================================
+
+[ ] Windows support
+    - Native port detection using netstat or PowerShell
+    - Process name resolution on Windows
+    - Service installation (Windows Service)
+    - Config file location (AppData)
+
+[ ] macOS support
+    - Native port detection using netstat or lsof
+    - Process name resolution on macOS
+    - LaunchAgent/LaunchDaemon support
+    - Config file location (~/Library/Application Support)
+
+[ ] Cross-compilation testing
+    - Test builds for all platforms
+    - Verify functionality on each platform
+    - Document platform-specific limitations
+
+========================================
+PHASE 4: Advanced Features
+========================================
+
+[ ] Metrics caching
+    - Don't send duplicate metrics
+    - Only send deltas/changes
+    - Reduce bandwidth usage
+
+[ ] Agent auto-updates
+    - Check for updates from backend
+    - Download and install updates
+    - Rollback on failure
+    - Update notifications
+
+[ ] Remote configuration
+    - Pull configuration from backend
+    - Configuration versioning
+    - Dynamic configuration updates
+    - Fallback to local config
+
+[ ] Advanced log processing
+    - Structured log parsing (JSON logs)
+    - Log aggregation
+    - Pattern matching for errors
+    - Crash detection heuristics
+
+[ ] Performance optimizations
+    - Parallel collection (goroutines)
+    - Batch SSL checks
+    - Connection pooling
+    - Payload compression
+
+[ ] Additional metrics
+    - Load average
+    - Process count
+    - File descriptor usage
+    - Network connection count
+    - I/O wait times
+
+========================================
+PHASE 5: Production Hardening
+========================================
+
+[ ] Security enhancements
+    - Config file encryption (optional)
+    - Secure config file permissions check
+    - Certificate pinning for backend
+    - Audit logging
+
+[ ] Monitoring and observability
+    - Agent metrics endpoint (optional)
+    - Prometheus metrics export (optional)
+    - Health check endpoint
+    - Debug mode with verbose logging
+
+[ ] Deployment improvements
+    - Installation scripts (install.sh, install.ps1)
+    - Package repositories (apt, yum, homebrew)
+    - Docker image
+    - Kubernetes deployment manifests
+
+[ ] Documentation
+    - API documentation
+    - Configuration reference
+    - Troubleshooting guide
+    - Architecture diagrams
+    - Video tutorials
+
+========================================
+PHASE 6: Integration & Ecosystem
+========================================
+
+[ ] Backend integration testing
+    - Test with real backend API
+    - Verify payload format compatibility
+    - Test all error scenarios
+    - Performance testing under load
+
+[ ] CI/CD pipeline
+    - Automated testing on PR
+    - Automated builds for all platforms
+    - Release automation
+    - Version tagging
+
+[ ] Monitoring integration
+    - Integrate with backend alerting
+    - Agent status reporting
+    - Failure notifications
+
+[ ] Community features
+    - Plugin system for custom metrics
+    - Custom log parsers
+    - Community-contributed integrations
+
+========================================
+NOTES
+========================================
+
+Priority order:
+1. Testing & Quality (Critical for production)
+2. MVP Enhancements (Better user experience)
+3. Production Hardening (Security and reliability)
+4. Cross-Platform Support (Wider adoption)
+5. Advanced Features (Future differentiation)
+6. Integration & Ecosystem (Scale and community)
+
+Current focus: MVP completion and testing.
