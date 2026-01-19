@@ -289,6 +289,11 @@ sudo launchctl load /Library/LaunchDaemons/com.vpsentinel.agent.plist
 
 View your monitoring dashboard at [VPSentinel.com](https://www.vpsentinel.com/)
 
+<img width="1914" height="987" alt="Screenshot 2026-01-18 144647" src="https://github.com/user-attachments/assets/233848e9-4d56-4f92-ae48-dc8b65ecbb43" />
+<img width="1903" height="988" alt="Screenshot 2026-01-18 144734" src="https://github.com/user-attachments/assets/3b0b33cb-3a3b-4d2e-9797-9df4c46bba98" />
+<img width="1904" height="976" alt="Screenshot 2026-01-18 144905" src="https://github.com/user-attachments/assets/fd3e0e96-8111-4853-95d0-8af42046756e" />
+<img width="1902" height="987" alt="Screenshot 2026-01-18 144802" src="https://github.com/user-attachments/assets/c0b7e12b-c114-4868-bcc5-f179088add6b" />
+
 ---
 
 ## 🛡 Trust Model
