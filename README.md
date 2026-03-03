@@ -289,10 +289,14 @@ sudo launchctl load /Library/LaunchDaemons/com.vpsentinel.agent.plist
 
 View your monitoring dashboard at [VPSentinel.com](https://www.vpsentinel.com/)
 
-<img width="1914" height="987" alt="Screenshot 2026-01-18 144647" src="https://github.com/user-attachments/assets/233848e9-4d56-4f92-ae48-dc8b65ecbb43" />
-<img width="1903" height="988" alt="Screenshot 2026-01-18 144734" src="https://github.com/user-attachments/assets/3b0b33cb-3a3b-4d2e-9797-9df4c46bba98" />
-<img width="1904" height="976" alt="Screenshot 2026-01-18 144905" src="https://github.com/user-attachments/assets/fd3e0e96-8111-4853-95d0-8af42046756e" />
-<img width="1902" height="987" alt="Screenshot 2026-01-18 144802" src="https://github.com/user-attachments/assets/c0b7e12b-c114-4868-bcc5-f179088add6b" />
+<img width="1898" height="909" alt="image" src="https://github.com/user-attachments/assets/dff05212-ac3b-4bc2-be72-78bad057b327" />
+<img width="1900" height="904" alt="image" src="https://github.com/user-attachments/assets/ca2143f8-639f-445b-b957-49b0a6b60f6b" />
+<img width="1904" height="939" alt="image" src="https://github.com/user-attachments/assets/5db4493a-db61-4b71-b4c4-75673e0c4fc4" />
+<img width="1906" height="944" alt="image" src="https://github.com/user-attachments/assets/0b1a6c25-ebc5-43cc-b677-6cb3cb775dfe" />
+<img width="1900" height="942" alt="image" src="https://github.com/user-attachments/assets/d86b5c33-d950-4792-a779-7c7f438cb99e" />
+<img width="1897" height="937" alt="image" src="https://github.com/user-attachments/assets/9f6dba6c-e08c-4222-84fc-c531340b8d9a" />
+<img width="1899" height="937" alt="image" src="https://github.com/user-attachments/assets/fa0fe131-0dbe-49ca-b33b-f7547b0a8e60" />
+
 
 ---
 
